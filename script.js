@@ -3,7 +3,7 @@ const result = document.querySelector('.result');
 
 const VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
-const palindrome = () => {
+const FindVOWELS = () => {
   let vowelCount = 0;
   const word = document.querySelector('.input-text').value.trim();
 
@@ -28,9 +28,9 @@ const palindrome = () => {
 };
 document.addEventListener('keyup', keyevent => {
     if (keyevent.code === 'Enter') {
-        palindrome();
+        FindVOWELS();
     }
   })
 
 
-btn.addEventListener('click', palindrome);
+btn.addEventListener('click', FindVOWELS);
